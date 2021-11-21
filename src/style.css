@@ -15,6 +15,7 @@ body {
   font-family: var(--default-font-family);
   font-weight: 300;
   color: var(--text-color);
+  background-color: var(--primary-color);
 }
 
 h1 {
@@ -36,7 +37,7 @@ h1 {
 }
 
 .main-container {
-  padding: 90px 100px 55px;
+  padding: 90px 100px 40px;
 }
 
 .menu {
@@ -52,6 +53,34 @@ h1 {
   font-size: 20px;
 }
 
+.horizontal-social-media {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.primary-button {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.primary-button:hover {
+  background-color: var(--text-color);
+  border: 2px solid var(--text-color);
+  color: var(--primary-color);
+}
+
+.secondary-button {
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.secondary-button:hover {
+  background-color: var(--text-color);
+  border: 2px solid var(--text-color);
+  color: var(--primary-color);
+}
+
 .social-media-links {
   position: absolute;
   top: 430px;
@@ -64,10 +93,49 @@ h1 {
 
 .social-media-links,
 a {
-  color: var(--text-color);
+  color: var(--secondary-color);
 }
 
 .social-media-links,
 a:hover {
-  color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+@media (max-width: 576px) {
+  h1 {
+    text-align: center;
+    font-size: 55px;
+  }
+  p {
+    text-align: center;
+  }
+  .footer-text {
+    font-size: 10px;
+    color: var(--secondary-color);
+  }
+  .home-button {
+    font-size: 13px;
+    margin-top: 15px;
+  }
+  .home-buttons {
+    text-align: center;
+  }
+  .home-container {
+    height: 280px;
+  }
+  .main-container {
+    padding: 90px 40px 40px;
+  }
+  .social-media-links {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .horizontal-social-media {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
 }
