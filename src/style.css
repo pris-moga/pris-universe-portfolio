@@ -7,6 +7,7 @@ Sacramento
   --heading-font-family: "Sacramento", cursive;
   --default-font-family: "Outfit", sans-serif;
   --primary-color: #0c5580;
+  --primary-color-transparency: #0c5580d7;
   --secondary-color: #d1d1d1;
   --text-color: white;
 }
@@ -15,7 +16,7 @@ body {
   font-family: var(--default-font-family);
   font-weight: 300;
   color: var(--text-color);
-  background-color: var(--primary-color);
+  background-color: var(--primary-color-transparency);
 }
 
 h1 {
@@ -23,11 +24,9 @@ h1 {
   font-size: 65px;
 }
 
-.background-img {
-  position: absolute;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
+.about-img {
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -45,6 +44,15 @@ h1 {
   width: 100%;
 }
 
+.home-artwork {
+  margin-left: 50px;
+}
+
+.home-artwork-vertical {
+  margin: 0 auto;
+  padding: 30px 0px;
+}
+
 .home-container {
   height: 420px;
 }
@@ -55,7 +63,10 @@ h1 {
 
 .horizontal-social-media {
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 390px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .primary-button {
@@ -106,36 +117,52 @@ a:hover {
     text-align: center;
     font-size: 55px;
   }
-  p {
-    text-align: center;
-  }
   .footer-text {
     font-size: 10px;
     color: var(--secondary-color);
+  }
+  .home-artwork {
+    margin: 0 auto;
+    transform: rotate(90deg);
   }
   .home-button {
     font-size: 13px;
     margin-top: 15px;
   }
-  .home-buttons {
-    text-align: center;
-  }
   .home-container {
     height: 280px;
   }
   .main-container {
-    padding: 90px 40px 40px;
+    padding: 100px 30px 30px;
+  }
+}
+
+@media (min-width: 576px) {
+}
+
+@media (max-width: 768px) {
+  h1 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  .home-artwork {
+    display: none;
+  }
+  .home-buttons {
+    text-align: center;
   }
   .social-media-links {
     display: none;
   }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
+  .home-artwork-vertical {
+    display: none;
+  }
   .horizontal-social-media {
     display: none;
   }
-}
-
-@media (max-width: 768px) {
 }
