@@ -10,6 +10,7 @@ Sacramento
   --primary-color-transparency: #0c5580d7;
   --secondary-color: #d1d1d1;
   --text-color: white;
+  --shadow: 2px 7px 15px #0c5580d7;
 }
 
 body {
@@ -26,7 +27,16 @@ h1 {
 
 .about-img {
   max-width: 400px;
+  display: block;
   margin: 0 auto;
+}
+
+.about-horizontal-social-media {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .logo {
@@ -73,6 +83,7 @@ h1 {
   background-color: var(--secondary-color);
   border: 2px solid var(--secondary-color);
   color: var(--primary-color);
+  box-shadow: var(--shadow);
 }
 
 .primary-button:hover {
@@ -84,6 +95,7 @@ h1 {
 .secondary-button {
   border: 2px solid var(--secondary-color);
   color: var(--secondary-color);
+  box-shadow: var(--shadow);
 }
 
 .secondary-button:hover {
@@ -125,7 +137,7 @@ a:hover {
     margin: 0 auto;
     transform: rotate(90deg);
   }
-  .home-button {
+  .responsive-button {
     font-size: 13px;
     margin-top: 15px;
   }
@@ -150,7 +162,8 @@ a:hover {
   .home-artwork {
     display: none;
   }
-  .home-buttons {
+  .home-buttons,
+  .about-button {
     text-align: center;
   }
   .social-media-links {
@@ -159,6 +172,9 @@ a:hover {
 }
 
 @media (min-width: 768px) {
+  .about-horizontal-social-media {
+    display: none;
+  }
   .home-artwork-vertical {
     display: none;
   }
