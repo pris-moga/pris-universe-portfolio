@@ -53,15 +53,6 @@ h1 {
   color: var(--text-color);
 }
 
-.about-horizontal-social-media,
-.gallery-horizontal-social-media {
-  text-align: center;
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
 .contact-container {
   margin-top: 50px;
 }
@@ -79,13 +70,21 @@ h1 {
   height: 420px;
 }
 
+.home-horizontal-social-media {
+  text-align: center;
+  margin-top: 370px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .home-text {
   font-size: 20px;
 }
 
 .horizontal-social-media {
   text-align: center;
-  margin-top: 390px;
+  margin-top: 20px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -159,6 +158,10 @@ a:hover {
     text-align: center;
     font-size: 55px;
   }
+  .arrow-to-top {
+    top: 510px;
+    right: 18px;
+  }
   .footer-text {
     font-size: 10px;
     color: var(--secondary-color);
@@ -206,6 +209,9 @@ a:hover {
     display: none;
   }
   .home-artwork-vertical {
+    display: none;
+  }
+  .home-horizontal-social-media {
     display: none;
   }
   .horizontal-social-media {
