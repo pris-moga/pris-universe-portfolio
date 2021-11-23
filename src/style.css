@@ -40,6 +40,10 @@ h1 {
   align-items: center;
 }
 
+.contact-container {
+  margin-top: 50px;
+}
+
 .logo {
   font-family: var(--heading-font-family);
   font-size: 30px;
