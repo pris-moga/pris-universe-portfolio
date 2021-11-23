@@ -44,21 +44,6 @@ h1 {
   margin-top: 50px;
 }
 
-.logo {
-  font-family: var(--heading-font-family);
-  font-size: 30px;
-  line-height: 1.2;
-}
-
-.main-container {
-  padding: 90px 100px 40px;
-}
-
-.menu {
-  position: absolute;
-  width: 100%;
-}
-
 .home-artwork {
   margin-left: 50px;
 }
@@ -82,6 +67,26 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.main-container {
+  padding: 90px 100px 40px;
+}
+
+.menu {
+  position: absolute;
+  width: 100%;
+}
+
+.navbar-brand {
+  font-family: var(--heading-font-family);
+  font-size: 30px;
+  line-height: 1.2;
+  color: var(--primary-color) !important;
+}
+
+.nav-link.active {
+  color: var(--primary-color) !important;
 }
 
 .primary-button {
@@ -119,13 +124,11 @@ h1 {
   text-align: center;
 }
 
-.social-media-links,
-a {
+.social-media-links a {
   color: var(--secondary-color);
 }
 
-.social-media-links,
-a:hover {
+.social-media-links a:hover {
   color: var(--text-color);
 }
 
