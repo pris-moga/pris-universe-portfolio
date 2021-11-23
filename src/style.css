@@ -31,6 +31,28 @@ h1 {
   margin: 0 auto;
 }
 
+.arrow-to-top {
+  position: fixed;
+  top: 500px;
+  right: 40px;
+  z-index: 2;
+  text-align: center;
+  padding-top: 3px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+}
+
+.arrow-to-top a {
+  color: var(--primary-color);
+}
+
+.arrow-to-top a:hover {
+  color: var(--text-color);
+}
+
 .about-horizontal-social-media,
 .gallery-horizontal-social-media {
   text-align: center;
@@ -115,8 +137,8 @@ h1 {
 }
 
 .social-media-links {
-  position: absolute;
-  top: 430px;
+  position: fixed;
+  top: 410px;
   left: 40px;
   z-index: 2;
   display: flex;
@@ -124,11 +146,11 @@ h1 {
   text-align: center;
 }
 
-.social-media-links a {
+a {
   color: var(--secondary-color);
 }
 
-.social-media-links a:hover {
+a:hover {
   color: var(--text-color);
 }
 
