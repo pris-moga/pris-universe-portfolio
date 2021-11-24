@@ -109,6 +109,10 @@ h1 {
   align-items: center;
 }
 
+.little-text {
+  font-size: 11px;
+}
+
 .main-container {
   padding: 90px 100px 40px;
 }
