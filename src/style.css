@@ -26,9 +26,12 @@ h1 {
 }
 
 .about-img {
-  max-width: 400px;
+  width: 400px;
   display: block;
   margin: 0 auto;
+  box-shadow: var(--shadow);
+  padding-left: 15px;
+  border-radius: 10px;
 }
 
 .address {
